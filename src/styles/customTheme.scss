@@ -1,0 +1,316 @@
+$enable-shadows: true;
+$primary: rgb(0, 19, 223);
+
+
+$body-color:  #333;
+$body-bg: #fff;
+
+@import '~/node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.nav-principal {
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+
+    .container {
+        position: relative;
+
+        button {
+            border: 0;
+
+            &:focus {
+                box-shadow: none !important;
+                outline: none !important;
+            }
+
+            .navbar-toggler-icon {
+                background-image: url('/hamburger.png');
+            }
+        }
+
+        #basic-navbar-nav {
+            position: relative;
+            z-index: 1;
+
+            .navbar-nav {
+                .nav-link {
+                    font-size: 1em;
+                    font-weight: 900;
+                    color:#000;
+                    position: relative;
+
+                    &:after {
+                        content:"";
+                        width: 0;
+                        height: 2px;
+                        background-color: #000;
+                        position: absolute;
+                        bottom:0;
+                        left: 0;
+                        transition: all ease-in-out .3s;
+                    }
+
+                    &:hover {
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0 25px;
+                    @media (max-width:768px) {
+                        margin-top: 1.5em;                        
+                    }
+                    .nav-link {
+                        &:first-child {
+                            font-weight: 300;
+                        }
+
+                        &:last-child {
+                            font-weight: 300;
+                            border-radius: 50px;
+                            background-color: #000;
+                            color: #fff;
+                            padding: 16px;
+                            transition: all .3s;
+
+                            &:hover {
+                                opacity: .8;
+
+                                &:after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.illustration {
+    position: relative;
+    z-index: 2;
+}
+
+.retangleYellow {
+    position: absolute;
+    width: 195px;
+    height: 195px;
+    right:0;
+    top: -195px;
+
+    background: #FFC04D;
+    filter: blur(80px);
+    border-radius: 154px;
+    transform: rotate(105deg);
+}
+
+.retangleBlue {
+    position: absolute;
+    width: 150px;
+    height: 170px;
+    right: 30px;
+    top: 0px;
+    background: #71C3FD;
+    filter: blur(100px);
+    border-radius: 1542px;
+    transform: rotate(105deg);
+}
+
+.retangleRed {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    right: 300px;
+    margin: 0 auto;
+    top: 150px;
+    background: #FE351F;
+    filter: blur(100px);
+    border-radius: 154px;
+}
+
+.retangleYellow-centered {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 0;
+    right: 790px;
+    margin: 0 auto;
+    top: 500px;
+    background: #FFC04D;
+    filter: blur(120px);
+    border-radius: 150px;
+}
+
+.title-slide {
+    color:#000;
+    font-weight: 900;
+
+    z-index: 1;
+    position: relative;
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+    max-width: 430px;
+    line-height: 40px;
+    margin-bottom: 1.8em;
+    color:#000;
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.form-newsletter {
+    background: #fff;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    z-index: 3;
+    border-radius: 50px;
+
+    @media (min-width:768px) {
+        width: 450px;
+    }
+
+    input {
+        background-color: transparent;
+        border: 0;
+        box-shadow: none !important;
+        color:#000;
+
+        font-size: 1em;
+        @media (min-width:768px) {
+            font-size: 1em;
+        }
+        outline: none;
+        padding: 0 25px;
+        
+        &::placeholder {
+            color: #000;
+            opacity: .2;
+            font-size: 1em;
+        }
+    }
+
+    button {
+        border: 0;
+        background-color: #FF4229;
+        color: #fff;
+        font-size: 14px;
+        height: 60px;
+        width: 140px;
+        border-radius: 50px;
+        font-weight: 600;
+        outline: none;
+        transition: all .3s;
+
+        &:hover {
+            background-color: #FF4229;
+            opacity: .8;
+        }
+    }
+}
+
+.icons-page {
+    @media (max-width:525px) {
+        justify-content: center;
+    }
+}
+
+.ellipse-button {
+    position: relative;
+    background-image: url(/ellipse.svg);
+    box-sizing: border-box;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    color: #000;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: #eba730;
+    }
+}
+
+.buttons-categories {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+    transition: all ease-in-out .3s;
+
+    &.oculos {
+        background-color: rgb(247 126 153 / 40%);
+        &:hover {
+            background-color: #F77E99;
+        }
+    }
+
+    &.camera {
+        background-color: rgb(1 234 160 / 40%);
+        &:hover {
+            background-color: #01EAA0;
+        }
+    }
+
+    &.tenis {
+        background-color: rgb(251 195 36 / 50%);
+        &:hover {
+            background-color: #FBC324;
+        }
+    }
+
+    &.more {
+        background-color: #FF4229;
+
+        &:hover {
+            opacity: .8;
+        }
+
+        img {
+            width: 25px;
+        }
+    }
+    
+    img {
+        width: 100%;
+    }
+}
