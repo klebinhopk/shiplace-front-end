@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Container, Row, Col, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 import { FaCaretRight } from 'react-icons/fa';
 
 const Home = () => (
