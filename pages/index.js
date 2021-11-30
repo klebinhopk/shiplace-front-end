@@ -59,7 +59,7 @@ const Home = () => (
 
             <Row className="mt-5 position-relative icons-page">
               <Col className="col-auto mb-3">
-                <span className="ellipse-button"><FaCaretRight size={28} /> <strong class="ms-3">Learn more</strong></span>
+                <span className="ellipse-button"><FaCaretRight size={28} /> <strong className="ms-3">Learn more</strong></span>
               </Col>
 
               <Col className="col-auto">
@@ -81,7 +81,7 @@ const Home = () => (
             </Row>
           </Col>
           <Col>
-            <img src="/Illustration.png" class="rounded img-fluid w-100 illustration" alt="" />
+            <img src="/Illustration.png" className="rounded img-fluid w-100 illustration" alt="" />
             <div className="retangleBlue"></div>
           </Col>
         </Row>
