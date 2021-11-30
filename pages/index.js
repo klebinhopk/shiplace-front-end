@@ -63,7 +63,7 @@ const Home = () => (
               </Col>
 
               <Col className="col-auto">
-                <Row>
+                <Row className="justify-content-center">
                   <Col className="col-auto">
                     <span className="buttons-categories oculos"><img src="/oculos.png"/></span>
                   </Col>
