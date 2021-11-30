@@ -64,16 +64,16 @@ const Home = () => (
 
               <Col className="col-auto">
                 <Row className="justify-content-center">
-                  <Col className="col-auto">
+                  <Col className="col-auto mb-3">
                     <span className="buttons-categories oculos"><img src="/oculos.png"/></span>
                   </Col>
-                  <Col className="col-auto">
+                  <Col className="col-auto mb-3">
                     <span className="buttons-categories camera"><img src="/camera.png"/></span>
                   </Col>
-                  <Col className="col-auto">
+                  <Col className="col-auto mb-3">
                     <span className="buttons-categories tenis"><img src="/tenis.png"/></span>
                   </Col>
-                  <Col className="col-auto">
+                  <Col className="col-auto mb-3">
                     <span className="buttons-categories more"><img src="/arrow-right.svg"/></span>
                   </Col>
                 </Row>
